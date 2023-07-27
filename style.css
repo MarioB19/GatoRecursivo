@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/21/b3/ca/21b3cadb885471ea5b5ee2c04d30bb15.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+/* Estilo para el título con fuente Bangers */
+.titulo{
+  color: #ffffff; /* Color del texto (blanco) */
+  font-family: 'Bangers', cursive; /* Fuente Bangers */
+  font-size: 48px; /* Tamaño del texto (ajusta según tus necesidades) */
+  text-align: center; /* Centra el texto horizontalmente */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto para mayor énfasis */
+  margin: 20px 0; /* Espaciado alrededor del título (ajusta según tus necesidades) */
+}
+
+
+.insta-container {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  left: 10px; /* Ajusta la distancia desde la izquierda según tus necesidades */
+}
+.insta {
+  /* Tus estilos para el contenido */
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 10px ;
+}
+
+.instagram-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.instagram-logo img {
+  width: 40px;
+}
+
+
+/* El resto del CSS se mantiene igual */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 10px;
+}
+
+.cell {
+  border: 1px solid #2a577a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(232, 22, 201, 0.6);
+}
+
+.inner-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-cell {
+  background-color: transparent; /* Fondo transparente */
+  color: #ffffff; /* Color del texto (blanco en este caso) */
+  border: 2px solid #c76095; /* Borde de 2px de color azul */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-cell:hover{
+  background-color: #9735e1; /* Color azul cuando el mouse está encima */
+  color: #ffffff; /* Cambia el color del texto a blanco cuando el mouse está encima */
+}
+
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #37505C;
+}
+
+
+
+/* Estilos para el botón */
+.restart {
+  background-color: transparent; /* Fondo transparente */
+  color: #ffffff; /* Color del texto (blanco en este caso) */
+  border: 2px solid #007bff; /* Borde de 2px de color azul */
+  border-radius: 5px; /* Radio del borde (puedes ajustar este valor) */
+  padding: 10px 20px; /* Espaciado interno del botón (ajusta según tus necesidades) */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+/* Estilos adicionales cuando el mouse pasa por encima del botón */
+.restart:hover {
+  background-color: #007bff; /* Color azul cuando el mouse está encima */
+  color: #ffffff; /* Cambia el color del texto a blanco cuando el mouse está encima */
+}
